@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-
+import './InputForm.css'
 function InputForm({onNewInput}){
 
     const [inputFromUser,setInputFromUser] = useState({
@@ -21,7 +21,7 @@ function InputForm({onNewInput}){
     };
 
     return (
-        <div style={{ width: '400px', margin: '20px' }}>
+        <div className = "input-form">
             <h2>Add Record</h2>
             <form onSubmit={handleFormSubmit}>
                 <div>

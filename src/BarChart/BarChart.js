@@ -53,6 +53,7 @@ function BarChart({ data }) {
 
     return (
         <div className = 'bar-chart'>
+            <h2>Age statistics</h2>
             <Bar height={300} data={chartData} options={chartOptions} />
         </div>
     );
